@@ -261,7 +261,9 @@ body, html {
   transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
 }
 
-
+.rodape p{
+  font-size: 1.2rem;
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {

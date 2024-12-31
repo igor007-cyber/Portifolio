@@ -65,7 +65,7 @@ function Home() {
         <nav className="menu">
           <ul>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Linguagens de Programação</a></li>
+            <li><a href="#linguagens">Linguagens de Programação</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
@@ -75,7 +75,7 @@ function Home() {
 
       {/* Corpo */}
       <main className="corpo">
-        <section className="linguagens">
+        <section className="linguagens" id="linguagens">
           <h2 className="titulo-prommaming"><i>Linguagens de Programação que eu utilizo</i></h2>
           <div className="trabalho" ref={containerRef}>
             {images.map((src, index) => (
@@ -90,7 +90,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="sobreMim">
+        <section className="sobreMim" id="sobre">
           
           <div className='FotoEu'>
             <img src={FotoFile} alt="eu" />
@@ -111,7 +111,7 @@ function Home() {
 
         </section>
 
-        <section className='Produtos'>
+        <section className='Produtos'  id="contato">
             <h1>Trabalhos que eu faço</h1>
             <div className='imgTrabalho'>
               <img src={Trabalho} alt="Trabalho" />
