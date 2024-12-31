@@ -304,9 +304,14 @@ body, html {
     text-align: center; /* Centraliza o texto para telas pequenas */
   }
 
+  .Produtos .imgTrabalho {
+    flex-direction: column; /* Organiza as imagens em coluna */
+    align-items: center; /* Centraliza as imagens */
+  }
+
   .Produtos .imgTrabalho img {
-    width: 520px; /* Ajusta o tamanho das imagens */
-    height: 520px;
+    width: 320px; /* Ajusta o tamanho das imagens */
+    height: 320px;
   }
 
   .Produtos h1 {
@@ -322,6 +327,16 @@ body, html {
   .typing-effect {
     font-size: 1.2rem;
     width: 80%;
+  }
+
+  .Produtos .imgTrabalho img {
+    width: 100%; /* Ocupa 100% da largura do container */
+    max-width: 250px; /* Define um limite máximo menor */
+  }
+
+  .Produtos h1 {
+    font-size: 1.5rem; /* Reduz o tamanho do título */
+    margin-bottom: 1rem; /* Ajusta o espaçamento inferior */
   }
 
   .trabalho img {
