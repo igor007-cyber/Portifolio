@@ -124,7 +124,7 @@ function Home() {
       {/* Rodapé */}
       <footer className="rodape">
         <div className='redesSociais'>
-          <a href="https://www.instagram.com/cyber_gigor/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/80px-Instagram_icon.png" alt="instragram" /></a>
+          <a href="https://www.instagram.com/cyber_gigor/" target='_blank'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/80px-Instagram_icon.png" alt="instragram" /></a>
           <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/90px-WhatsApp.svg.png" alt="Whatsapp" /></a>
         </div>
         <p>© 2024 Igor Ramalho. Todos os direitos reservados.</p>
