@@ -2,6 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import './style.css';
 import videoFile from '../assets/eu.mp4'; // Caminho do vídeo
 import FotoFile from '../assets/igor.png';
+import Doces from '../assets/doces.png';
+import Job from '../assets/job.png';
+import Trabalho from '../assets/trabalho.png';
 
 function Home() {
   const containerRef = useRef(null);
@@ -109,17 +112,21 @@ function Home() {
         </section>
 
         <section className='Produtos'>
-            <h3>Trabalhos que eu faço</h3>
-            <div>
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
+            <h1>Trabalhos que eu faço</h1>
+            <div className='imgTrabalho'>
+              <img src={Trabalho} alt="Trabalho" />
+              <img src={Job} alt="Job" />
+              <img src={Doces} alt="Doces" />
             </div>
         </section>
       </main>
 
       {/* Rodapé */}
-      <footer className="footer">
+      <footer className="rodape">
+        <div className='redesSociais'>
+          <a href="https://www.instagram.com/cyber_gigor/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/80px-Instagram_icon.png" alt="instragram" /></a>
+          <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/90px-WhatsApp.svg.png" alt="Whatsapp" /></a>
+        </div>
         <p>© 2024 Igor Ramalho. Todos os direitos reservados.</p>
       </footer>
     </>

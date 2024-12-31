@@ -37,7 +37,7 @@ body, html {
   justify-content: center;
   padding: 1rem;
   background: rgba(82, 76, 76, 0.5);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 5px rgb(52, 7, 141);
   border-radius: 50px;
 }
 
@@ -56,7 +56,7 @@ body, html {
 }
 
 .menu ul li a:hover {
-  background-color: black;
+  background-color: rgb(52, 7, 141);
   padding: 5px;
   border-radius: 10px;
 }
@@ -177,7 +177,7 @@ body, html {
 
 .sobreMim .FotoEu img:hover {
   transform: translateY(-10px); /* Efeito de flutuação ao passar o mouse */
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 1); /* Intensifica a sombra */
+  box-shadow: 0 20px 30px rgb(52, 7, 141); /* Intensifica a sombra */
 }
 
 .sobreMim .TextoSobreMim {
@@ -197,6 +197,71 @@ body, html {
   margin: 0; /* Remove margens extras */
   text-align: justify; /* Justifica o texto */
 }
+
+.Produtos {
+  width: 100%; /* Largura total */
+  text-align: center; /* Centraliza o texto */
+  padding: 3rem 1rem; /* Espaçamento interno */
+  background-color: #f8f8f8; /* Cor de fundo clara */
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.Produtos h1 {
+  font-size: 2rem; /* Tamanho do título */
+  margin-bottom: 2rem; /* Espaçamento abaixo do título */
+  color: #333; /* Cor do texto */
+}
+
+.Produtos .imgTrabalho {
+  display: flex; /* Exibe as imagens em linha */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  gap: 1rem; /* Espaçamento entre as imagens */
+  flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+}
+
+.Produtos .imgTrabalho img {
+  width: 350px; /* Largura de cada imagem */
+  object-fit: cover; /* Ajusta a proporção da imagem */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.Produtos .imgTrabalho img:hover {
+  transform: translateY(-10px); /* Flutuação ao passar o mouse */
+  box-shadow: 0 10px 20px rgb(52, 7, 141); /* Sombra mais intensa */
+}
+
+.rodape {
+  width: 100%; /* Largura total */
+  background-color: black; /* Fundo preto */
+  color: white; /* Texto branco */
+  text-align: center; /* Centraliza texto */
+  padding: 2rem 0; /* Espaçamento interno */
+}
+
+.rodape .redesSociais {
+  margin-bottom: 1rem; /* Espaçamento abaixo das redes sociais */
+}
+
+.rodape .redesSociais h4 {
+  margin-bottom: 1rem; /* Espaçamento abaixo do título */
+}
+
+.rodape .redesSociais img {
+  width: 50px; /* Tamanho das imagens */
+  height: 50px;
+  margin: 0 0.5rem; /* Espaçamento lateral entre os ícones */
+  transition: transform 0.3s ease; /* Suaviza o efeito de interação */
+}
+
+.rodape .redesSociais img:hover {
+  transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+}
+
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -235,6 +300,15 @@ body, html {
 
   .sobreMim .TextoSobreMim {
     text-align: center; /* Centraliza o texto para telas pequenas */
+  }
+
+  .Produtos .imgTrabalho img {
+    width: 520px; /* Ajusta o tamanho das imagens */
+    height: 520px;
+  }
+
+  .Produtos h1 {
+    font-size: 3.5rem; /* Ajusta o tamanho do título */
   }
 }
 
